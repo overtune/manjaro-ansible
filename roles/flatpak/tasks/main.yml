@@ -1,0 +1,20 @@
+---
+- name: Install the spotify flatpak
+  flatpak:
+    name: https://flathub.org/repo/appstream/com.spotify.Client.flatpakref
+    state: present
+
+- name: Install the slack flatpak
+  flatpak:
+    name: https://flathub.org/repo/appstream/com.slack.Slack.flatpakref
+    state: present
+
+- name: Install the postman flatpak
+  flatpak:
+    name: https://flathub.org/repo/appstream/com.getpostman.Postman.flatpakref
+    state: present
+
+- name: Install the gitkraken flatpak
+  flatpak:
+    name: https://flathub.org/repo/appstream/com.axosoft.GitKraken.flatpakref
+    state: present

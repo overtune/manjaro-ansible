@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+    - {role: base, tags: ['base']}
+    - {role: terminal_tools, tags: ['terminal_tools']}
+    - {role: desktop, tags: ['desktop']}
+    - {role: dotfiles, tags: ['dotfiles']}
+    - {role: fonts, tags: ['fonts']}
+    - {role: flatpak, tags: ['flatpak']}
+  vars_prompt:
+    - name: user_password
+      prompt: 'Enter desired user password'
