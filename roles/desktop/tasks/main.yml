@@ -44,11 +44,11 @@
       - terminator
     state: present
 
-- name: Install firefox-developer-edition
-  pacman:
-    name:
-      - firefox-developer-edition
-    state: present
+# - name: Install firefox-developer-edition
+#   pacman:
+#     name:
+#       - firefox-developer-edition
+#     state: present
 
 - name: Install dunst 
   pacman:
